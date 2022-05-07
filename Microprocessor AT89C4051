@@ -1,0 +1,103 @@
+$crystal 12000000
+P1.0 = 1
+P1.1 = 1
+P1.2 = 1
+P1.3 = 1
+P1.4 = 1
+P1.5 = 1
+P1.6 = 1
+P1.7 = 1
+Dim N As Byte
+Dim Time As Byte
+N = 0
+Do
+If P3.2 = 0 Then
+    Time = 1
+    N = &B01111111
+    P1 = N
+    Wait Time
+    N = &B10111111
+    P1 = N
+    Wait Time
+    N = &B11011111
+    P1 = N
+    Wait Time
+    N = &B11101111
+    P1 = N
+    Wait Time
+    N = &B11110111
+    P1 = N
+    Wait Time
+    N = &B11111011
+    P1 = N
+    Wait Time
+    N = &B11111101
+    P1 = N
+    Wait Time
+    N = &B11111110
+    P1 = N
+    Wait Time
+    N = &B11111111
+    P1 = N
+End If
+
+If P3.3 = 0 Then
+	Time=1
+	N=&B10101010
+	P1=N
+	Wait Time
+	N=&B01010101
+	P1=N
+	Wait Time
+	N=&B11110000
+	P1=N55
+	Wait Time
+	N=&B00001111
+	P1=N
+End If
+
+If
+	P3.4 = 0 Then
+	Time=1
+	N=&B10000001
+	P1=N
+	Wait Time
+	N=&B01000010
+	P1=N
+	Wait Time
+	N=&B00100100
+	P1=N
+	Wait Time
+	N=&B00011000
+	P1=N
+	Wait Time
+	N=&B11111111
+	P1=N
+End If
+
+
+If P3.5 = 0 Then
+	Time=1
+	N=&B0000000
+	P1=N
+	Wait Time
+	N=&B11111111
+	P1=N
+	Wait Time
+	N=&B10101011
+	P1=N
+	Wait Time
+	N=&B11111100
+	P1=N91
+	Wait Time
+	N=&B00001111
+	P1=N
+	Wait Tim 
+	N=&B11110000
+	P1=N
+	Wait Time
+	N=&B00000000
+	P1=N
+End If
+Loop
+End
